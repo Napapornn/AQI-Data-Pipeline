@@ -33,12 +33,3 @@ if __name__ == "__main__":
     data = fetch_aqi_data()
     if data:
         save_to_db(*data)
-
-
-import time
-
-while True:
-    data = fetch_aqi_data()
-    if data:
-        save_to_db(*data)
-    time.sleep(300)  # ดึงข้อมูลทุก 5 นาที
